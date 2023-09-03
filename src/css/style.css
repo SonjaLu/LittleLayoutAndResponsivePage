@@ -1,0 +1,461 @@
+body {
+    background-color: #EDEDED;
+    margin: 0;
+    font-family: 'Asap', sans-serif;
+
+}
+
+textarea {
+    color: black;
+    font-family: 'Asap', sans-serif;
+    font-size: 16px;
+    line-height: 1.8;
+}
+
+img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+
+header {
+    background-color: black;
+    height: 100px;
+}
+
+footer {
+    background: black;
+    color: white;
+    text-align: center;
+    padding: 1.5em;
+    font-size: 1.2em;
+    font-weight: bold;    
+}
+
+.sidebar-right {
+    background-color: #EDEDED;
+    color: white;
+}
+
+h1{
+    margin: 0;
+    color: red;
+}
+
+p{
+    margin:0;
+}
+
+@media screen and (min-width: 1120px) {
+    .content-area {
+       display:flex;
+    }
+    .sidebar-right {
+        flex: 0 0 320px;
+    }
+}
+
+.side-header {
+    height: 400px;
+    display: flex;
+    flex-flow: column;
+}
+
+.side-info {
+    flex-grow: 1;
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+}
+
+.side-title {
+    margin: 0;
+    font-size: 2em;
+    font-weight: 300;
+    text-align: center;
+    color: white;
+    text-transform: uppercase;
+}
+
+.side-description {
+    margin-top: -.8;
+    font-size: 1.2em;
+    font-style: italic;
+    text-align: center;
+    color: #F6D200;
+}
+
+.main-menu {
+    padding: 1em 1em;
+    color: black;
+    background: linear-gradient(63deg, rgb(60, 52, 202) 0%, rgb(60, 60, 223) 55%, rgba(9,194,232,1) 97%);
+    
+}
+
+@media  screen and (min-width: 1120px) {
+    .side-title {
+        font-size: 4em;
+    }
+}
+
+/*post styles*/
+.main-content-area {
+    padding: 2em;
+}
+   
+.post {
+    margin-bottom: 1em;
+    background-color: white;
+
+}
+
+.post a {
+    text-decoration: none;
+    color: black;
+
+}
+
+.post-content {
+    padding: 0 40px 20px;
+}
+
+.post-content h2 {
+    background: linear-gradient(63deg, rgb(60, 52, 202) 0%, rgb(60, 60, 223) 55%, rgba(9,194,232,1) 97%);
+    color: black;
+    text-align: center;
+    padding: 20px;
+    margin: 0 -40px 30px;
+
+}
+
+@media screen and (min-width: 810px) {
+    .posts {
+       display: flex;
+       flex-wrap: wrap;
+justify-content: space-between;
+ 
+}
+
+
+.post {
+    flex-basis: 49%;
+}
+    
+}
+
+@media screen and (min-width: 1120px) {
+    .post-one-third {
+        flex-basis: 32%;
+    }
+    .post-half {
+        flex-basis: 49%;
+    }
+    .post-full {
+        flex-basis: 100%;
+    }
+}
+
+/*watch today styles*/
+.section-header {
+    color: black;
+    font-size: 3em;
+    text-align: center;
+}
+
+.watch-card {
+    margin-bottom: 1em;
+
+}
+
+.watch-content {
+    background-color: black;
+    color: white;
+    padding: 3em;
+}
+
+.watch-content h2 {
+    margin: 0;
+    margin-bottom: 1em;
+    font-size: 2em;
+    font-weight: 300px;
+   text-transform: capitalize;
+}
+
+.movie-info {
+   font-weight: bold;
+}
+
+.movie-info span {
+    padding-right: 1.5em;
+}
+
+.movie-story {
+    margin: 1em 0;
+}
+
+.watch-content a {
+    font-weight: bold;
+    color: white;
+}
+
+@media screen and (min-width: 810px) {
+    .watch-card {
+        display: flex;
+    
+    }
+
+    .watch-content {
+      display: flex;
+      flex-flow: column;
+      justify-content: center;
+    }
+
+    .img-right {
+        order: 2;
+    }
+}
+    
+/*download styles*/
+.download.card {
+    margin-bottom: 1em;
+    
+}
+
+.download-content {
+   background-color: white;
+}
+
+.download-content a {
+    background-color: black;
+    color: white;
+    padding: 1em 2em;
+    text-decoration: none;
+    text-transform: capitalize;
+}
+
+.download-content a i {
+    font-size: 2.5em;
+
+}
+
+.download-info {
+    padding: 1em 2em;
+
+}
+
+.download-info h4 {
+    margin: 0;
+
+}
+
+.download-info p {
+    margin: 0;
+    font-size: .9em;
+}
+
+.download-cast img {
+    height: 60px;
+    width: 60px;
+    border-radius: 50px;
+}
+
+.download-rating {
+    background: linear-gradient(63deg, rgb(60, 52, 202) 0%, rgb(60, 60, 223) 55%, rgba(9,194,232,1) 97%);
+    padding: 1em 2em;
+    color: black;
+    font-size: .9em;
+}  
+
+.download-rating .rate {
+    font-size: 2.5em;
+    font-weight: bold;
+    margin-bottom: -.25em;
+}
+
+.download-content {
+    display:flex;
+    flex-flow: column;
+}
+
+.download-content a, .download-rating {
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    text-align: center;
+}
+
+.download-genre, .download-cast {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+ 
+}
+
+.download-info h4 {
+    flex-basis: 20%;
+}
+
+.download-genre {
+    margin-bottom: 10px;
+}
+
+@media screen and (min-width: 810px) {
+    .download-content {
+        display: flex;
+        flex-flow: row;
+ 
+    }
+    .download-content a, .download-rating {
+        flex-grow: 1;
+    }
+    .download-info {
+        flex-grow: 2;
+    }
+}
+
+.gallery-imgs {
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: -8px;
+}
+
+.gallery-img {
+    height: 205px;
+    flex-grow: 1;
+    margin: 0 0 8px 8px;
+}
+
+.gallery-img img {
+    height: 100%;
+    object-fit: cover;
+}
+    
+.gallery-img:nth-child(4n+1) {
+    flex-basis: 250px;
+}
+
+.gallery-img:nth-child(4n+2) {
+    flex-basis: 325px;
+}
+.gallery-img:nth-child(4n+3) {
+    flex-basis: 180px;
+}
+.gallery-img:nth-child(4n+4) {
+    flex-basis: 380px;
+}
+
+/*sidebar styles*/
+
+.sidebar-right {
+    padding: 2em;
+    color: black;
+}
+
+.widget {
+    background-color: white;
+    margin-bottom: 2em;
+}
+
+.widget-content {
+    padding: .5em 2em;
+}
+
+.sidebar-right ul {
+    list-style-type: none;
+    padding-left: 1em;
+}
+
+.sidebar-right ul a {
+   display: block;
+   padding-bottom: .4em;
+   color: black;
+   text-decoration: none;
+   font-weight: bold;
+}
+
+@media screen and (min-width: 810px) and (max-width: 1120px) {
+    .sidebar-right {
+        display: flex;
+        flex-wrap: wrap;
+    justify-content: space-between;
+    }
+
+    .widget {
+        flex-basis: 48.8%;
+    }
+}
+
+/*nav styles*/
+.main-menu {
+    color: black;
+    background-color: #F6D200;
+
+}
+
+.main-menu ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+  
+}
+
+.main-menu li a {
+    text-decoration: none;
+    color: black;
+    font-size: 1.1em;
+    font-weight: bold;
+    padding: .6em 1em;
+    display: block;
+    transition: all .5s ease;
+}
+
+.main-menu li a:hover {
+    background-color: black;
+    color: #F6D200
+   
+}
+
+
+@media screen and (min-width: 810px) {
+    .main-menu ul {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        text-align: center;
+    }
+
+    .main-menu ul li {
+        flex-grow: 1;
+        flex-basis: auto;
+        flex-shrink: 0;
+    }
+
+   
+    }
+
+
+    .download, .download-card {
+        width: 100%;
+    }
+
+    .download-content {
+        width: 100%;
+    }
+
+    .glow {
+        font-size: 80px;
+        color: #fff;
+        text-align: center;
+        animation: glow 1s ease-in-out infinite alternate;
+      }
+      
+      @keyframes glow {
+        from {
+          text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #e60073, 0 0 40px #e60073, 0 0 50px #e60073, 0 0 60px #e60073, 0 0 70px #e60073;
+        }
+        
+        to {
+          text-shadow: 0 0 20px #fff, 0 0 30px #ff4da6, 0 0 40px #ff4da6, 0 0 50px #ff4da6, 0 0 60px #ff4da6, 0 0 70px #ff4da6, 0 0 80px #ff4da6;
+        }
+      }
